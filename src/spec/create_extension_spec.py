@@ -17,7 +17,7 @@ def main():
 
     lab_meta_data_extension = NWBGroupSpec(
         doc="type for storing metadata for Turner lab",
-        neurodata_type_def="LabMetaDataExtension",
+        neurodata_type_def="TurnerLabMetaData",
         neurodata_type_inc="LabMetaData",
     )
 

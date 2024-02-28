@@ -1,5 +1,5 @@
 groups:
-- neurodata_type_def: LabMetaDataExtension
+- neurodata_type_def: TurnerLabMetaData
   neurodata_type_inc: LabMetaData
   doc: type for storing metadata for Turner lab
   attributes:

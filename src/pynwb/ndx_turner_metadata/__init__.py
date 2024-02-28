@@ -18,7 +18,7 @@ if not os.path.exists(__spec_path):
 # Load the namespace
 load_namespaces(str(__spec_path))
 
-LabMetaDataExtension = get_class("LabMetaDataExtension", "ndx-turner-metadata")
+TurnerLabMetaData = get_class("TurnerLabMetaData", "ndx-turner-metadata")
 
 # Remove these functions from the package
 del load_namespaces, get_class
