@@ -39,8 +39,8 @@ class TestLabMetaDataExtensionSimpleRoundtrip(TestCase):
 
     def test_roundtrip(self):
         """
-        Add a LabMetaDataExtension to an NWBFile, write it to file, read the file, and test that the LabMetaDataExtension from the
-        file matches the original LabMetaDataExtension.
+        Add a LabMetaDataExtension to an NWBFile, write it to file, read the file, and test that
+        the LabMetaDataExtension from the file matches the original LabMetaDataExtension.
         """
 
         # Create a LabMetaDataExtension object
