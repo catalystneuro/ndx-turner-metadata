@@ -20,7 +20,7 @@ from dateutil.tz import tzlocal
 
 from pynwb import NWBFile, NWBHDF5IO
 
-from ndx_turner_metadata import LabMetaDataExtension
+from ndx_turner_metadata import TurnerLabMetaData
 
 # Create NWBFile
 nwbfile = NWBFile(
@@ -30,8 +30,8 @@ nwbfile = NWBFile(
     )
 
 # Create LabMetaData
-lab_meta_data = LabMetaDataExtension(
-    name="LabMetaData",
+lab_meta_data = TurnerLabMetaData(
+    name="MPTPMetaData",
     MPTP_status="pre-MPTP",
 )
 
@@ -46,7 +46,7 @@ with NWBHDF5IO(nwbfile_path, mode="w") as io:
 # Check LabMetaData was added to the NWB file
 with NWBHDF5IO(nwbfile_path, mode="r", load_namespaces=True) as io:
     read_nwbfile = io.read()
-    read_nwbfile_lab_metadata = read_nwbfile.lab_meta_data["LabMetaData"]
+    read_nwbfile_lab_metadata = read_nwbfile.lab_meta_data["MPTPMetaData"]
 
 ```
 

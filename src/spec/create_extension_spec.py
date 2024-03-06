@@ -17,14 +17,15 @@ def main():
 
     lab_meta_data_extension = NWBGroupSpec(
         doc="type for storing metadata for Turner lab",
-        neurodata_type_def="LabMetaDataExtension",
+        neurodata_type_def="TurnerLabMetaData",
         neurodata_type_inc="LabMetaData",
     )
 
     lab_meta_data_extension.add_attribute(
         name="MPTP_status",
-        doc="Indicates whether the subject was treated with MPTP (1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine; a chemical compound known to induce Parkinsonism) "
-            "with values 'pre-MPTP' or 'post-MPTP', reflecting the treatment status of the subject.",
+        doc="Indicates whether the subject was treated with MPTP (1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine; "
+            "a chemical compound known to induce Parkinsonism) with values 'pre-MPTP' or 'post-MPTP', "
+            "reflecting the treatment status of the subject.",
         dtype="text",
     )
 
